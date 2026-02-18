@@ -1,0 +1,446 @@
+Watching for file changes with StatReloader
+"POST /api/login/?username=testuser&password=password HTTP/1.1" 200 78
+C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /api/login/?username=testuser&password=password HTTP/1.1" 200 78
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 5540
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+"POST /api/login/ HTTP/1.1" 200 5579
+Method Not Allowed: /api/verify-otp
+"GET /api/verify-otp HTTP/1.1" 405 5581
+Bad Request: /api/verify-otp
+"POST /api/verify-otp HTTP/1.1" 400 5598
+Bad Request: /api/verify-otp
+"POST /api/verify-otp HTTP/1.1" 400 5559
+Not Found: /api/
+"GET /api/ HTTP/1.1" 404 2678
+Method Not Allowed: /api/verify-otp
+"GET /api/verify-otp HTTP/1.1" 405 5581
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 5540
+"POST /api/login/ HTTP/1.1" 200 5579
+Internal Server Error: /api/verify-otp
+Traceback (most recent call last):
+  File "C:\Users\vishn\AppData\Local\Programs\Python\Python314\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\vishn\AppData\Local\Programs\Python\Python314\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vishn\AppData\Local\Programs\Python\Python314\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\vishn\AppData\Local\Programs\Python\Python314\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vishn\AppData\Local\Programs\Python\Python314\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vishn\AppData\Local\Programs\Python\Python314\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\vishn\AppData\Local\Programs\Python\Python314\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vishn\AppData\Local\Programs\Python\Python314\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\views.py", line 58, in post
+    if otp_obj.attempts >= settings.MAX_OTP_ATTEMPTS:
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vishn\AppData\Local\Programs\Python\Python314\Lib\site-packages\django\conf\__init__.py", line 77, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'MAX_OTP_ATTEMPTS'
+"POST /api/verify-otp HTTP/1.1" 500 99418
+Not Found: /api/
+"GET /api/ HTTP/1.1" 404 2678
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 5540
+Watching for file changes with StatReloader
+"POST /api/login/ HTTP/1.1" 200 5579
+Internal Server Error: /api/verify-otp
+Traceback (most recent call last):
+  File "C:\Users\vishn\AppData\Local\Programs\Python\Python314\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\vishn\AppData\Local\Programs\Python\Python314\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vishn\AppData\Local\Programs\Python\Python314\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\vishn\AppData\Local\Programs\Python\Python314\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vishn\AppData\Local\Programs\Python\Python314\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vishn\AppData\Local\Programs\Python\Python314\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\vishn\AppData\Local\Programs\Python\Python314\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vishn\AppData\Local\Programs\Python\Python314\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\views.py", line 58, in post
+    if otp_obj.attempts >= settings.MAX_OTP_ATTEMPTS:
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vishn\AppData\Local\Programs\Python\Python314\Lib\site-packages\django\conf\__init__.py", line 77, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'MAX_OTP_ATTEMPTS'
+"POST /api/verify-otp HTTP/1.1" 500 99418
+C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 5540
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+"POST /api/login/ HTTP/1.1" 200 5579
+Method Not Allowed: /api/verify-otp
+"GET /api/verify-otp HTTP/1.1" 405 5581
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+Internal Server Error: /api/verify-otp
+Traceback (most recent call last):
+  File "C:\Users\vishn\AppData\Local\Programs\Python\Python314\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\vishn\AppData\Local\Programs\Python\Python314\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vishn\AppData\Local\Programs\Python\Python314\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\vishn\AppData\Local\Programs\Python\Python314\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vishn\AppData\Local\Programs\Python\Python314\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vishn\AppData\Local\Programs\Python\Python314\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\vishn\AppData\Local\Programs\Python\Python314\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vishn\AppData\Local\Programs\Python\Python314\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\views.py", line 58, in post
+    if otp_obj.attempts >= settings.MAX_OTP_ATTEMPTS:
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vishn\AppData\Local\Programs\Python\Python314\Lib\site-packages\django\conf\__init__.py", line 77, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'MAX_OTP_ATTEMPTS'
+"POST /api/verify-otp HTTP/1.1" 500 99418
+C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 5540
+"POST /api/login/ HTTP/1.1" 200 5579
+Method Not Allowed: /api/verify-otp
+"GET /api/verify-otp HTTP/1.1" 405 5581
+Bad Request: /api/verify-otp
+"POST /api/verify-otp HTTP/1.1" 400 5548
+C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\utils.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 5540
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+Method Not Allowed: /api/verify-otp
+"GET /api/verify-otp HTTP/1.1" 405 5581
+"POST /api/login/ HTTP/1.1" 200 5579
+"POST /api/verify-otp HTTP/1.1" 200 5555
+Watching for file changes with StatReloader
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 5540
+"POST /api/login/ HTTP/1.1" 200 5579
+Internal Server Error: /api/verify-otp
+Traceback (most recent call last):
+  File "C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\views.py", line 71, in post
+    "access_token": str(refresh.access_token),
+                        ^^^^^^^
+NameError: name 'refresh' is not defined. Did you mean: 'rerfresh'?
+"POST /api/verify-otp HTTP/1.1" 500 97215
+C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2305
+Method Not Allowed: /api/verify-otp
+"GET /api/verify-otp HTTP/1.1" 405 5581
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+Method Not Allowed: /api/login/
+"GET /api/login/ HTTP/1.1" 405 5540
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+"POST /api/login/ HTTP/1.1" 200 5579
+"POST /api/verify-otp HTTP/1.1" 200 6107
+C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"OPTIONS /api/login/ HTTP/1.1" 200 0
+"POST /api/login/ HTTP/1.1" 200 78
+"OPTIONS /api/login/login/ HTTP/1.1" 200 0
+Not Found: /api/login/login/
+"POST /api/login/login/ HTTP/1.1" 404 2715
+Not Found: /api/login/login/
+"POST /api/login/login/ HTTP/1.1" 404 2715
+Watching for file changes with StatReloader
+Not Found: /api/login/login/
+"POST /api/login/login/ HTTP/1.1" 404 2715
+Not Found: /api/login/login/
+"POST /api/login/login/ HTTP/1.1" 404 2715
+Not Found: /api/login/login/
+"POST /api/login/login/ HTTP/1.1" 404 2715
+Not Found: /api/login/login/
+"POST /api/login/login/ HTTP/1.1" 404 2715
+Watching for file changes with StatReloader
+Not Found: /api/login/login/
+"POST /api/login/login/ HTTP/1.1" 404 2715
+Watching for file changes with StatReloader
+Not Found: /api/login/login/
+"POST /api/login/login/ HTTP/1.1" 404 2715
+"OPTIONS /api/login/ HTTP/1.1" 200 0
+Bad Request: /api/login/
+"POST /api/login/ HTTP/1.1" 400 42
+C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /api/login/
+Traceback (most recent call last):
+  File "C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\views.py", line 17, in post
+    if not username or not password:
+           ^^^^^^^^
+NameError: name 'username' is not defined
+"POST /api/login/ HTTP/1.1" 500 19864
+"OPTIONS /api/login/ HTTP/1.1" 200 0
+Internal Server Error: /api/login/
+Traceback (most recent call last):
+  File "C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\views.py", line 17, in post
+    if not username or not password:
+           ^^^^^^^^
+NameError: name 'username' is not defined
+"POST /api/login/ HTTP/1.1" 500 19864
+Internal Server Error: /api/login/
+Traceback (most recent call last):
+  File "C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\views.py", line 17, in post
+    if not username or not password:
+           ^^^^^^^^
+NameError: name 'username' is not defined
+"POST /api/login/ HTTP/1.1" 500 19864
+C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/login/ HTTP/1.1" 200 78
+"OPTIONS /api/verify-otp/ HTTP/1.1" 200 0
+Not Found: /api/verify-otp/
+"POST /api/verify-otp/ HTTP/1.1" 404 2712
+C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /api/verify-otp/
+"POST /api/verify-otp/ HTTP/1.1" 404 2712
+"POST /api/login/ HTTP/1.1" 200 78
+Not Found: /api/verify-otp/
+"POST /api/verify-otp/ HTTP/1.1" 404 2712
+"POST /api/login/ HTTP/1.1" 200 78
+Not Found: /api/verify-otp/
+"POST /api/verify-otp/ HTTP/1.1" 404 2712
+C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /api/login/
+"POST /api/login/ HTTP/1.1" 400 42
+Bad Request: /api/login/
+"POST /api/login/ HTTP/1.1" 400 42
+"POST /api/login/ HTTP/1.1" 200 78
+Not Found: /api/verify-otp/
+"POST /api/verify-otp/ HTTP/1.1" 404 2712
+C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /api/login/ HTTP/1.1" 200 78
+Not Found: /api/verify-otp/
+"POST /api/verify-otp/ HTTP/1.1" 404 2712
+C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\utils.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"OPTIONS /api/login/ HTTP/1.1" 200 0
+Bad Request: /api/login/
+"POST /api/login/ HTTP/1.1" 400 42
+"POST /api/login/ HTTP/1.1" 200 78
+"OPTIONS /api/verify-otp/ HTTP/1.1" 200 0
+Not Found: /api/verify-otp/
+"POST /api/verify-otp/ HTTP/1.1" 404 2712
+Watching for file changes with StatReloader
+"POST /api/login/ HTTP/1.1" 200 78
+Not Found: /api/verify-otp/
+"POST /api/verify-otp/ HTTP/1.1" 404 2712
+Not Found: /api/verify-otp/
+"POST /api/verify-otp/ HTTP/1.1" 404 2712
+C:\Users\vishn\Desktop\Projects\Cyber Projects\otp_2fa_project\backend\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader

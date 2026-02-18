@@ -5,4 +5,4 @@ def generate_otp_secret():
 
 def verify_otp(secret, otp):
     totp = pyotp.TOTP(secret, interval=30)
-    return totp.verify(otp)
+    return totp.verify(otp, valid_window=1)
